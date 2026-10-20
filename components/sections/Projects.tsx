@@ -85,7 +85,7 @@ export default function Projects() {
 
             <p className="m-0 mt-6 max-w-xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
               From electrical installations to system upgrades, explore the
-              types of work RAP Electric can help you plan and discuss.
+              types of work RAPID Electric can help you plan and discuss.
             </p>
           </motion.div>
 
