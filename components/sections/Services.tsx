@@ -83,7 +83,7 @@ export default function Services() {
             variants={item}
             className="m-0 max-w-md text-base leading-7 text-slate-600 sm:text-lg sm:leading-8 lg:mb-1"
           >
-            From home electrical work to commercial projects, RAP Electric
+            From home electrical work to commercial projects, RAPID Electric
             brings a professional, detail-minded approach to every job.
           </motion.p>
         </div>

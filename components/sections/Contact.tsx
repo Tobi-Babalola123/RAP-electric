@@ -86,7 +86,7 @@ export default function Contact() {
           <div className="flex items-center gap-4">
             <span aria-hidden="true" className="h-px w-10 bg-orange-600" />
             <p className="m-0 text-xs font-extrabold uppercase tracking-[0.22em] text-slate-500">
-              Contact RAP Electric
+              Contact RAPID Electric
             </p>
           </div>
 
@@ -120,7 +120,7 @@ export default function Contact() {
             </span>
             <span className="min-w-0">
               <span className="block text-xs font-extrabold uppercase tracking-[0.18em] text-slate-500">
-                Call RAP Electric
+                Call RAPID Electric
               </span>
               <span className="mt-1 block font-heading text-2xl font-extrabold tracking-wide text-navy sm:text-3xl">
                 {PHONE}
@@ -255,7 +255,7 @@ export default function Contact() {
               <textarea
                 className={`${FIELD} min-h-36 resize-y`}
                 name="description"
-                placeholder="What would you like RAP Electric to help with?"
+                placeholder="What would you like RAPID Electric to help with?"
                 required
               />
             </Field>

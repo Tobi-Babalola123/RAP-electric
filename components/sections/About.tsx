@@ -124,7 +124,7 @@ export default function About() {
           <motion.div variants={item} className="flex items-center gap-4">
             <span aria-hidden="true" className="h-px w-10 bg-orange-600" />
             <p className="m-0 text-xs font-extrabold uppercase tracking-[0.22em] text-slate-500">
-              About RAP Electric
+              About RAPID Electric
             </p>
           </motion.div>
 
@@ -140,10 +140,10 @@ export default function About() {
             variants={item}
             className="m-0 mt-6 max-w-xl text-base leading-7 text-slate-600 sm:text-lg sm:leading-8"
           >
-            Electrical work should feel clear, considered, and well managed. RAP
-            Electric serves residential and commercial customers with a focus on
-            careful work practices, thoughtful communication, and quality
-            project execution.
+            Electrical work should feel clear, considered, and well managed.
+            RAPID Electric serves residential and commercial customers with a
+            focus on careful work practices, thoughtful communication, and
+            quality project execution.
           </motion.p>
 
           {/* Values: ruled, not boxed */}

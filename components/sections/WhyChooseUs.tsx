@@ -83,7 +83,7 @@ export default function WhyChooseUs() {
           <motion.div variants={item} className="flex items-center gap-4">
             <span aria-hidden="true" className="h-px w-10 bg-orange-500" />
             <p className="m-0 text-xs font-extrabold uppercase tracking-[0.22em] text-slate-400">
-              Why RAP Electric
+              Why RAPID Electric
             </p>
           </motion.div>
 

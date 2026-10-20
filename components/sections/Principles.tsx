@@ -46,7 +46,7 @@ export default function Principles() {
           <motion.div variants={item} className="flex items-center gap-4">
             <span aria-hidden="true" className="h-px w-10 bg-orange-600" />
             <p className="m-0 text-xs font-extrabold uppercase tracking-[0.22em] text-slate-500">
-              The RAP approach
+              The RAPID approach
             </p>
           </motion.div>
 

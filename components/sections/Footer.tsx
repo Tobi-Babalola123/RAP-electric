@@ -108,7 +108,7 @@ export default function Footer() {
       {/* Bottom bar */}
       <div className="border-t border-white/10">
         <div className="shell flex flex-col gap-3 py-6 text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between">
-          <p className="m-0">© {year} RAP Electric. All rights reserved.</p>
+          <p className="m-0">© {year} RAPID Electric. All rights reserved.</p>
           <p className="m-0">Your hometown electrical contractor.</p>
           <a
             href="#home"
