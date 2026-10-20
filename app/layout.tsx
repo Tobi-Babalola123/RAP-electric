@@ -32,7 +32,7 @@ const stackSansNotch = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "RAP Electric | Electrical Services & Electrician in Texas",
+  title: "RAPID Electric | Electrical Services & Electrician in Texas",
 
   icons: {
     icon: "/images/logo.png",
@@ -44,9 +44,9 @@ export const metadata: Metadata = {
     "RAP Electric provides reliable electrical services, repairs, installations, lighting, panel upgrades and electrical solutions for residential and commercial properties. Contact our team to discuss your electrical project.",
 
   keywords: [
-    "RAP Electric",
-    "RAP Electric Texas",
-    "RAP Electric electrical services",
+    "RAPID Electric",
+    "RAPID Electric Texas",
+    "RAPID Electric electrical services",
     "electrician Texas",
     "electrical contractor Texas",
     "electrical services Texas",
@@ -73,12 +73,12 @@ export const metadata: Metadata = {
 
   authors: [
     {
-      name: "RAP Electric",
+      name: "RAPID Electric",
     },
   ],
 
-  creator: "RAP Electric",
-  publisher: "RAP Electric",
+  creator: "RAPID Electric",
+  publisher: "RAPID Electric",
   applicationName: "RAP Electric",
 
   category: "Electrical Services",
