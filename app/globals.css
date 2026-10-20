@@ -1,0 +1,294 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  font-family: var(--font-stack-sans-notch), Arial, sans-serif;
+}
+@layer components {
+  .shell {
+    width: min(100% - 2.5rem, 78rem);
+    margin-inline: auto;
+  }
+}
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+.marquee {
+  width: max-content;
+  animation: marquee 28s linear infinite;
+}
+
+.marquee:hover {
+  animation-play-state: paused;
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 28s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.ticker-track {
+  animation: marquee 30s linear infinite;
+}
+
+.ticker-track:hover {
+  animation-play-state: paused;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --color-navy: var(--navy);
+  --color-navy-foreground: var(--navy-foreground);
+  --color-steel: var(--steel);
+
+  --font-sans:
+    var(--font-stack-sans-notch), ui-sans-serif, system-ui, sans-serif;
+  --font-heading:
+    var(--font-stack-sans-notch), ui-sans-serif, system-ui, sans-serif;
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --radius-2xl: calc(var(--radius) + 12px);
+  --radius-3xl: calc(var(--radius) + 24px);
+}
+
+:root {
+  color-scheme: light;
+
+  /* Core palette */
+  --background: #f8fafc; /* light slate */
+  --foreground: #111827; /* near-black text */
+
+  --card: #ffffff;
+  --card-foreground: #111827;
+
+  --popover: #ffffff;
+  --popover-foreground: #111827;
+
+  --primary: #0f172a; /* dark navy */
+  --primary-foreground: #f8fafc;
+
+  --secondary: #f97316; /* construction orange */
+  --secondary-foreground: #ffffff;
+
+  --muted: #eef2f7;
+  --muted-foreground: #64748b; /* steel gray */
+
+  --accent: #fdba74; /* light orange accent */
+  --accent-foreground: #0f172a;
+
+  --destructive: #dc2626;
+
+  --border: #e2e8f0;
+  --input: #e2e8f0;
+  --ring: #f97316;
+
+  /* Extra brand tokens */
+  --navy: #0f172a;
+  --navy-foreground: #f8fafc;
+  --steel: #64748b;
+
+  --radius: 0.875rem;
+}
+
+@media (min-width: 640px) {
+  @layer components {
+    .shell {
+      width: min(100% - 4rem, 78rem);
+    }
+  }
+}
+
+.section {
+  padding-block: clamp(5rem, 8vw, 8rem);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+    max-width: 100%;
+    min-height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+    min-height: 100dvh;
+  }
+  img,
+  video,
+  iframe {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  ::selection {
+    background: var(--secondary);
+    color: #ffffff;
+  }
+}
+
+section {
+  overflow-x: hidden;
+}
+
+main {
+  overflow-x: hidden;
+}
+
+@media (max-width: 900px) {
+  .location-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .location-grid > div:first-child {
+    padding: 64px 24px !important;
+  }
+
+  .location-grid > div:last-child {
+    min-height: 400px !important;
+  }
+
+  .location-grid iframe {
+    min-height: 400px !important;
+  }
+}
+
+/* =========================================
+   BONESO FOOTER RESPONSIVE
+========================================= */
+
+.footer-grid {
+  width: 100%;
+}
+
+.footer-grid a {
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+/* Tablet */
+@media (max-width: 1050px) {
+  .footer-grid {
+    grid-template-columns: 1.4fr 1fr 1fr !important;
+    gap: 48px 36px !important;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+    max-width: 600px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 42px !important;
+    padding: 58px 24px 48px !important;
+  }
+
+  .footer-brand {
+    grid-column: auto;
+    max-width: 100%;
+    padding-bottom: 8px;
+  }
+
+  .footer-brand img {
+    width: 155px !important;
+  }
+
+  .footer-grid > div:not(.footer-brand) {
+    width: 100%;
+  }
+
+  .footer-grid h4 {
+    margin-bottom: 17px !important;
+  }
+
+  .footer-bottom {
+    padding: 20px 24px 24px !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 14px !important;
+  }
+
+  .footer-values {
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 6px 9px !important;
+    line-height: 1.6;
+  }
+}
+
+/* Small phones */
+@media (max-width: 420px) {
+  .footer-grid {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .footer-bottom {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+
+  .footer-brand p {
+    font-size: 13px !important;
+  }
+
+  .footer-values {
+    font-size: 9px !important;
+  }
+}
