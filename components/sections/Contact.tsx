@@ -98,8 +98,14 @@ export default function Contact() {
           </h2>
 
           <p className="m-0 mt-6 max-w-md text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">
-            Share a few details to prepare your quote request, or call RAP
-            Electric directly to start the conversation.
+            For any inquiries, questions or concerns, please call{" "}
+            <a
+              href={PHONE_LINK}
+              className="font-bold text-navy underline decoration-orange-500 underline-offset-4 transition-colors hover:text-orange-600"
+            >
+              {PHONE}
+            </a>{" "}
+            or fill out the following form.
           </p>
 
           <a
@@ -122,10 +128,42 @@ export default function Contact() {
             </span>
           </a>
 
-          <p className="m-0 mt-8 max-w-sm border-t border-slate-200 pt-6 text-sm leading-6 text-slate-600">
-            Residential or commercial, a clear project description helps make
-            the first conversation more productive.
-          </p>
+          <div className="mt-8 border-t border-slate-200 pt-7">
+            <p className="m-0 text-xs font-extrabold uppercase tracking-[0.2em] text-slate-500">
+              Main Address
+            </p>
+
+            <address className="mt-3 not-italic text-base leading-7 text-slate-700">
+              <span className="block font-semibold text-navy">PO Box 1417</span>
+              <span className="block">Howe, Texas 75459</span>
+            </address>
+
+            <div className="mt-6 grid gap-4 border-t border-slate-200 pt-6">
+              <div>
+                <p className="m-0 text-xs font-extrabold uppercase tracking-[0.18em] text-slate-500">
+                  Email
+                </p>
+                <a
+                  href="mailto:Brent@RapidElectricCo.com"
+                  className="mt-2 inline-block break-all text-sm font-semibold text-navy underline decoration-orange-500 underline-offset-4 transition-colors hover:text-orange-600 sm:text-base"
+                >
+                  Brent@RapidElectricCo.com
+                </a>
+              </div>
+
+              <div>
+                <p className="m-0 text-xs font-extrabold uppercase tracking-[0.18em] text-slate-500">
+                  Office
+                </p>
+                <a
+                  href={PHONE_LINK}
+                  className="mt-2 inline-block text-base font-bold text-navy transition-colors hover:text-orange-600"
+                >
+                  {PHONE}
+                </a>
+              </div>
+            </div>
+          </div>
         </motion.div>
 
         {/* Form panel */}
