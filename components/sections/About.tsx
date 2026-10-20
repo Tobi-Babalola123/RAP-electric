@@ -81,7 +81,7 @@ export default function About() {
 
           <div className="relative isolate overflow-hidden rounded-2xl bg-slate-100 shadow-[0_30px_60px_-30px_rgba(15,23,42,0.55)]">
             <img
-              src="https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1400&q=85"
+              src="/images/abouit.jpg"
               alt="Electrician carrying out electrical work"
               loading="lazy"
               decoding="async"

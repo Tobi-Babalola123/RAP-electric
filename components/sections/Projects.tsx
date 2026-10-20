@@ -7,25 +7,25 @@ const EASE = [0.22, 1, 0.36, 1] as const;
 
 const projectImages = [
   {
-    src: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=1400&q=85",
+    src: "/images/electrician.webp",
     alt: "Electrical installation and equipment in a work environment",
     title: "Control Systems",
     className: "md:col-span-2",
   },
   {
-    src: "https://images.unsplash.com/photo-1621905252507-b35492cc74b4?auto=format&fit=crop&w=1000&q=85",
+    src: "/images/testing.jpeg",
     alt: "Electrician carrying out electrical work",
     title: "Testing & Diagnostics",
     className: "",
   },
   {
-    src: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?auto=format&fit=crop&w=1000&q=85",
+    src: "/images/installation.jpeg",
     alt: "Electrical components and installation details",
     title: "Electrical Installations",
     className: "",
   },
   {
-    src: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1400&q=85",
+    src: "/images/panel.jpeg",
     alt: "Close-up of electronic components and circuit details",
     title: "Panel Upgrades",
     className: "md:col-span-2",

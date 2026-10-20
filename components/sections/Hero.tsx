@@ -36,7 +36,7 @@ export default function Hero() {
     >
       {/* Photo */}
       <img
-        src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&w=2400&q=85"
+        src="/images/raze.webp"
         alt=""
         aria-hidden="true"
         fetchPriority="high"
